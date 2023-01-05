@@ -1,0 +1,87 @@
+:root {
+    --main-color:#F5F6F7;
+    --secondary-color:#2485E1;
+    --tertiary-color:#425563;
+    --background: #b7b7b7;
+}
+
+p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-color);
+    font-size: 10px;
+}
+
+.containers {
+    padding-left:5px;
+    padding-right:16px;
+    padding-top:35px;
+}
+
+.dyn {
+    background-color: white;
+    height: 284px;
+    border-radius: 6px 0px 0px 6px;
+    box-shadow: 0px 8px 14px -14px var(--tertiary-color); /*third is blur*/
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.divButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    scrollbar-width: auto;
+    padding:10px 10px 10px 10px;
+}
+
+.table{
+    width:100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    margin-bottom: 6px;
+    padding-top: 8px; 
+    padding-bottom: 9px;
+    padding-left: 5px;
+    transition: 0.3s;
+}
+/* ::-webkit-scrollbar{
+
+}
+
+.results > ::-webkit-scrollbar-track {
+    border-radius: 1000px;
+} */
+
+.table:hover{
+    background-color: #fcfcfc
+}
+
+.table > div{
+    text-align: left;
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    padding: 5px 35px 5px 35px;
+    border-radius: 5px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./index.css"/>
+    </head>
+    <body>
+
+        <div class="containers">
+            <p>1. Clicking this button will return all users from the server.</p>
+            <div class="dyn"> 
+                <div class="divButton">
+                    <button id="usersButton">Click</button>
+                </div>
+                <div class="results" id="one">
+                    <div class="table">
+                        <div>id</div>
+                        <div>First Name</div>
+                        <div>Last Name</div>
+                        <div>Email</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containers">
+            <p>2. Clicking this button will return all orders from the server.</p>
+            <div class="dyn"> 
+                <div class="divButton">
+                    <button id="ordersButton">Click</button>
+                </div>
+                <div class="results" id="two" >
+                    <div class="table">
+                        <div>Price</div>
+                        <div>Product</div>
+                        <div>Status</div>
+                        <div>User Id</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containers">
+            <p>3. Clicking this button will return ONLY the orders from Jane.</p>
+            <div class="dyn"> 
+                <div class="divButton">
+                    <button id="janeButton">Click</button>
+                </div>
+                <div class="results" id="three">
+                    <div class="table">
+                        <div>Price</div>
+                        <div>Product</div>
+                        <div>Status</div>
+                        <div>User Id</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="./index.js"></script>
+</html>
